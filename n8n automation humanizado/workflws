@@ -1,0 +1,11 @@
+├── workflows/
+│   ├── 01_webhook-parser.json      # Recepção, validação inicial e tratamento de mídias (Áudio/Texto/Imagem)
+│   ├── 02_buffer-redis.json        # Controle de atendimento, filas temporárias e janela de acumulação (Buffer)
+│   ├── 03_user-management.json     # Verificação, criação e sincronização de dados de usuários no Supabase
+│   └── 04_ai-agent-recepcao.json   # Camada cognitiva (AI Agent), Vector Store, Tools e envio humanizado
+├── src/
+│   ├── config/                     # Credenciais, variáveis de ambiente e endpoints base (Avisa API)
+│   ├── scripts/                    # Rotinas auxiliares, tratamentos de texto em JavaScript/Java
+│   └── database/                   # Schemas SQL, tabelas do Supabase e migrações do Postgres
+├── docs/                           # Diagramas de arquitetura, fluxo de dados e assets visuais
+└── README.md                       # Documentação principal para o GitHub
